@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f1e9">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<script src="contact.js" defer></script> 
+    <title>Contact — Votre prochain voyage</title>
+</head>
+<body class="body-contact">
+    <main class="contact-page">
+        <section class="contact-card" aria-labelledby="contact-title">
+            <div class="contact-intro">
+                <p class="contact-eyebrow">Un voyage qui vous ressemble</p>
+				<p class="contact-eyebrow"><a href="../index.html">Accueil</a></p>
+                <h1 id="contact-title">Parlons de votre prochaine escapade</h1>
+                <p class="contact-description">Quelques détails suffisent pour commencer à imaginer votre voyage idéal. Nous vous répondrons rapidement.</p>
+            </div>
+
+            <form class="contact-form" method="get" action="">
+                <div class="form-field">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" autocomplete="family-name" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" autocomplete="given-name" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="datedenaissance">Date de naissance <span>(facultatif)</span></label>
+                    <input type="date" name="datedenaissance" id="datedenaissance" value="2000-01-01" min="1900-01-01" max="2026-12-31">
+                </div>
+
+                <div class="form-field">
+                    <label for="telephone">Téléphone</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="0400 00 00 00" autocomplete="tel" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Adresse e-mail</label>
+                    <input type="email" id="email" name="email" placeholder="votre.email@exemple.com" autocomplete="email" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="budget">Budget envisagé</label>
+                    <select id="budget" name="budget" required>
+                        <option value="">Sélectionnez une tranche</option>
+                        <option value="0-1000">0 - 1 000 €</option>
+                        <option value="1000-2000">1 000 - 2 000 €</option>
+                        <option value="2000-5000">2 000 - 5 000 €</option>
+                        <option value="5000+">5 000 € et plus</option>
+                    </select>
+                </div>
+
+                <div class="form-field form-field-full">
+                    <label for="message">Votre projet de voyage</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Destination, dates, envies… Racontez-nous ce que vous imaginez." required></textarea>
+                </div>
+
+                <div class="form-field-full form-submit">
+                    <button type="submit">Envoyer ma demande <span aria-hidden="true">→</span></button>
+                    <p>Tous les champs sont obligatoires, sauf mention contraire.</p>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
