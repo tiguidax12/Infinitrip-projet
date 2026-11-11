@@ -209,7 +209,7 @@
 .contenu-accueil,
 .pied-de-page {
     box-sizing: border-box;
-    width: min(100% - 2rem, 1100px);
+    width: min(100% - 2rem, 1500px);
     margin-right: auto;
     margin-left: auto;
 }
@@ -288,7 +288,7 @@
 .boite-approche,
 .boite-presentation,
 .boite-voyage {
-    padding: 1rem;
+    padding: 2rem;
     border: 1px solid #dce4dc;
     border-radius: 12px;
     background: #fbfcfa;
@@ -307,6 +307,7 @@
     box-sizing: border-box;
     flex: 1 1 250px;
     border-radius: 12px;
+    min-height: 280px;
 }
 
 .boite-approche h3,
@@ -365,7 +366,7 @@
 @media (max-width: 650px) {
     .contenu-accueil,
     .pied-de-page {
-        width: min(100% - 1.5rem, 1100px);
+        width: min(100% - 1.5rem, 1500px);
     }
 
     .entete-principal {
@@ -395,8 +396,8 @@
     
 
     .contenu-accueil section {
-        margin: 1.25rem 0;
-        padding: 1rem;
+    margin: 3rem 0;      
+    padding: 2.5rem;     
     }
 
     .boite-presentation {
