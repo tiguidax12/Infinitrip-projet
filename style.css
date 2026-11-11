@@ -206,14 +206,6 @@
     font-family: "Roboto Condensed", sans-serif;
 }
 
-.contenu-accueil,
-.pied-de-page {
-    box-sizing: border-box;
-    width: min(100% - 2rem, 1500px);
-    margin-right: auto;
-    margin-left: auto;
-}
-
 .entete-principal {
     box-sizing: border-box;
     width: 100%;
@@ -350,13 +342,40 @@
 }
 
 .pied-de-page {
-    display: flex;
-    justify-content: center;
-    padding: 1.5rem 0;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 3rem;
+    padding: 2rem 1rem 1.5rem;
+    text-align: center;
+    color: #293d3b;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 -24px 70px rgba(52, 76, 67, 0.12);
+    border-radius: 12px 12px 0 0;
 }
 
-.page-accueil .pied-de-page a {
+.pied-de-page p {
+    margin: 0.3rem 0;
+}
+
+.pied-nom {
+    font-weight: 700;
+}
+
+.pied-de-page a {
     color: #577d72;
+    text-decoration: none;
+}
+
+.pied-de-page a:hover {
+    text-decoration: underline;
+}
+
+.pied-droits {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #dce4dc;
+    font-size: 0.85rem;
+    color: #6f807b;
 }
 
 .contenu-accueil h3 {
@@ -364,8 +383,7 @@
 }
 
 @media (max-width: 650px) {
-    .contenu-accueil,
-    .pied-de-page {
+    .contenu-accueil {
         width: min(100% - 1.5rem, 1500px);
     }
 
